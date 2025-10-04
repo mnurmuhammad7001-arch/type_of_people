@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Тест личности</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- Firebase -->
+<script type="module" src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js"></script>
+<script type="module" src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js"></script>
+</head>
+<body>
+<div class="container">
+  <div id="start-screen">
+    <h1>Тест личности</h1>
+    <input type="text" id="age" placeholder="Ваш возраст">
+    <select id="direction">
+      <option value="">Выберите направление</option>
+      <option value="Лечебное дело">Лечебное дело</option>
+      <option value="Стоматология">Стоматология</option>
+    </select>
+    <button id="start-btn">Начать тест</button>
+  </div>
+
+  <div id="quiz" class="hidden">
+    <h2 id="question-text"></h2>
+    <div id="answers"></div>
+    <button id="next-btn">Далее</button>
+  </div>
+
+  <div id="result-screen" class="hidden">
+    <pre id="result-text"></pre>
+  </div>
+</div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>

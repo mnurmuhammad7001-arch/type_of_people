@@ -1,0 +1,72 @@
+/* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #18326f, #164596);
+  color: rgb(227, 227, 227);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: rgba(13, 5, 43, 0.4);
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+}
+
+h1, h2 {
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #4caf50;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+input[type=radio] {
+  width: 25px;
+  height: 25px;
+  vertical-align: bottom;
+  margin-right: 8px;
+}
+
+.hidden { display: none; }
+
+input, select {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  margin-top: 5px;
+}
+
+input#age {
+  width: 550px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: 2px solid #4a90e2;
+  border-radius: 5px;
+}
